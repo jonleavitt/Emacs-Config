@@ -40,8 +40,8 @@
 ;; Emacs users obviously have little need for Command and Option keys,
 ;; but they do need Meta and Super
 (when (eq system-type 'darwin)
-  (setq mac-command-modifier 'super)
-  (setq mac-option-modifier 'meta))
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'super))
 
 ;; Death to the tabs!
 (setq-default indent-tabs-mode nil)
