@@ -1,0 +1,29 @@
+;; -*- emacs-lisp -*- <12/02/02 16:03:01 /Users/jsleavit/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["ssh" "jsleavit" "ssh.cs.brown.edu" nil]
+  ("uname" "Linux 2.6.32-5-686-bigmem")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin" "/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("~" "/home/jsleavit")
+  ("file-exists" "test -e")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 36428)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "base64")
+  ("remote-decoding" "base64 -d -i")
+  ("gid-string" "jsleavit")
+  ("inline-compress" "gzip")
+  ("inline-decompress" "gzip -d")
+  ("uid-integer" 36241)))
