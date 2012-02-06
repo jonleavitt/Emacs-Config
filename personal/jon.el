@@ -48,5 +48,4 @@
      (list (line-beginning-position)
            (line-beginning-position 2)))))
 
-(desktop-load-default)
-(desktop-read)
+(server-start)
