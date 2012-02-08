@@ -47,5 +47,3 @@
      (message "Copied line")
      (list (line-beginning-position)
            (line-beginning-position 2)))))
-
-(server-start)
