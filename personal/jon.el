@@ -34,8 +34,8 @@
 
 (autoload 'expand-abbrev-hook "expand")
 (define-abbrev-table 'java-mode-abbrev-table'(
-                                             ("sout" ["System.out.println(\"\");" 3 () nil] expand-abbrev-hook 0)
-                                             ("psvm" ["public static void main(String args[]){\n\n}" 2 () nil] expand-abbrev-hook 0)))
+                                              ("sout" ["System.out.println(\"\");" 3 () nil] expand-abbrev-hook 0)
+                                              ("psvm" ["public static void main(String args[]){\n\n}" 2 () nil] expand-abbrev-hook 0)))
 
 ;;show line numbers
 (global-linum-mode 1)
