@@ -48,6 +48,6 @@
      (list (line-beginning-position)
            (line-beginning-position 2)))))
 
-(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
+;;(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
 ;;prevent annoying still has clients message
-                                        ;(global-set-key (kbd "C-x C-k") 'server-edit)
+(global-set-key (kbd "C-x C-k") 'server-edit)
