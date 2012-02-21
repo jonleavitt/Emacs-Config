@@ -51,3 +51,16 @@
 ;;(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
 ;;prevent annoying still has clients message
 (global-set-key (kbd "C-x C-k") 'server-edit)
+
+(defun java-describe (symbol-name)
+  (interactive "MJava Class:")
+  (let ((my-string (replace-regexp-in-string 
+        "^.*class-use/.*n" 
+        ""
+        (shell-command-to-string
+         (concat "open \"http://www.google.com/search?btnI=I'm+Feeling+Lucky&q=site:http://docs.oracle.com/javase/6/docs/api/java/+\"" symbol-name
+           ))
+       )))
+    (string-match "^\(.*\)$" my-string)
+    (browse-url (match-string 0 my-string))))
+(global-set-key (kbd "C-h j") 'java-describe)
