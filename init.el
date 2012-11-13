@@ -61,3 +61,4 @@ by Prelude.")
 ;;; init.el ends here
 (put 'upcase-region 'disabled nil)
 (setq geiser-repl-use-other-window nil)
+(put 'downcase-region 'disabled nil)
