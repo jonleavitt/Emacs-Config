@@ -1,5 +1,5 @@
 ;;indents the whole buffer
-(defun ib ()
+(defun indent-buffer ()
   "indent whole buffer"
   (interactive)
   (delete-trailing-whitespace)
@@ -72,3 +72,4 @@
     (isearch-repeat (if isearch-forward 'forward))
     (ad-enable-advice 'isearch-search 'after 'isearch-no-fail)
     (ad-activate 'isearch-search)))
+(provide 'jon)

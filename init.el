@@ -1,7 +1,9 @@
+(setq geiser-racket-binary "/Users/Jon/Dropbox/programmingDropbox/bin/racket")
+
 ;; On OS X Emacs doesn't use the shell PATH if it's not started from
 ;; the shell. If you're using homebrew modifying the PATH is essential.
 (if (eq system-type 'darwin)
-    (push "/usr/local/bin" exec-path))
+        (push "/usr/local/bin" exec-path))
 
 (defvar prelude-dir (file-name-directory load-file-name)
   "The root dir of the Emacs Prelude distribution.")
@@ -19,10 +21,12 @@ by Prelude.")
 (add-to-list 'load-path prelude-modules-dir)
 (add-to-list 'load-path prelude-vendor-dir)
 (add-to-list 'load-path prelude-personal-dir)
-
+(add-to-list 'load-path "elpa")
 ;; config changes made through the customize UI will be store here
 (setq custom-file (concat prelude-personal-dir "custom.el"))
 
+(require 'jon)
+(require 'quack)
 ;; the core stuff
 (require 'prelude-packages)
 (require 'prelude-el-get)
@@ -42,7 +46,6 @@ by Prelude.")
 (require 'prelude-groovy)
 (require 'prelude-haskell)
 (require 'prelude-js)
-(require 'prelude-latex)
 (require 'prelude-markdown)
 (require 'prelude-org)
 (require 'prelude-perl)
@@ -56,3 +59,5 @@ by Prelude.")
   (mapc 'load (directory-files prelude-personal-dir nil "^[^#].*el$")))
 
 ;;; init.el ends here
+(put 'upcase-region 'disabled nil)
+(setq geiser-repl-use-other-window nil)
